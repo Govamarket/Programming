@@ -1,4 +1,5 @@
 import React from "react";
+import { MdIconName } from 'react-icons/md';
 import { CiSearch } from "react-icons/ci";
 import { BsMic } from "react-icons/bs";
 import { CiImageOn } from "react-icons/ci";

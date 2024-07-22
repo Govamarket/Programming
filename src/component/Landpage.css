@@ -276,6 +276,7 @@ section CiImageOn{
       grid-template-columns: auto auto;
       place-items: center;
       column-gap: 200px;
+      row-gap: 40px;
     }
 
     .same-con{
@@ -283,6 +284,7 @@ section CiImageOn{
         grid-template-columns: auto auto;
         place-items: center;
         column-gap: 200px;
+        row-gap: 40px;
     }
 }
 
