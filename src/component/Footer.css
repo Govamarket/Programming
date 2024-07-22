@@ -18,7 +18,7 @@
 }
 
 .footer {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   position: relative;
 }
 
@@ -80,13 +80,14 @@
 }
 
 .all-right p{
+  display: inline-block;
+  color: #6e6a6a;
+  padding: 10px;
 font-size: 12px;
-text-align: end;
 align-items: center;
 margin-top: 20px;
 margin-left: 20px;
 margin-bottom: 0px;
-border-bottom: 2px solid #ccc;
 }
 
 @media (max-width: 768px) {
@@ -99,5 +100,16 @@ border-bottom: 2px solid #ccc;
     column-gap: 30px;
    
   }
+
+  .all-right p{
+    font-size: 12px;
+    text-align: start;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    } 
 
 }

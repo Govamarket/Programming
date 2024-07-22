@@ -268,23 +268,37 @@ section CiImageOn{
       display: grid;
       grid-template-columns: auto auto;
       place-items: center;
-      column-gap: 200px;
+      column-gap: 100px;
 
     }
     .new-rows{
         display: grid;
       grid-template-columns: auto auto;
       place-items: center;
-      column-gap: 200px;
+      column-gap: 100px;
       row-gap: 40px;
+      margin-left: 60px;
+      margin-right: 80px;
     }
 
     .same-con{
         display: grid;
         grid-template-columns: auto auto;
         place-items: center;
-        column-gap: 200px;
+        column-gap: 100px;
         row-gap: 40px;
+        margin-left: 60px;
+        margin-right: 80px;
     }
+
+    .child-text{
+        display: flex;
+        position: relative;
+        color:red;
+        align-items: center;
+        font-size: 19px;
+        font-weight: 500;
+}
+
 }
 
