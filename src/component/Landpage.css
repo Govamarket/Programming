@@ -255,5 +255,34 @@ section CiImageOn{
     max-width: 200px;
 }
 
+@media (max-width: 768px) {
+    .landpage{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+        align-items: center;
+        position: relative;
+    }
 
+    .rows{
+      display: grid;
+      grid-template-columns: auto auto;
+      place-items: center;
+      column-gap: 200px;
+
+    }
+    .new-rows{
+        display: grid;
+      grid-template-columns: auto auto;
+      place-items: center;
+      column-gap: 200px;
+    }
+
+    .same-con{
+        display: grid;
+        grid-template-columns: auto auto;
+        place-items: center;
+        column-gap: 200px;
+    }
+}
 

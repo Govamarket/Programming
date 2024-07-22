@@ -88,3 +88,16 @@ margin-left: 20px;
 margin-bottom: 0px;
 border-bottom: 2px solid #ccc;
 }
+
+@media (max-width: 768px) {
+  .footer-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    margin-right: 180px;
+    margin-left: 90px;
+    column-gap: 30px;
+   
+  }
+
+}
