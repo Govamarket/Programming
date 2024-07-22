@@ -90,7 +90,7 @@ margin-left: 20px;
 margin-bottom: 0px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .footer-container{
     display: grid;
     grid-template-columns: auto auto auto;
