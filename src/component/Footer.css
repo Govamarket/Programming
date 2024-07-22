@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.colum-1 .upper-logo img {
+  width: 100px;
+}
+
+.colum-1 {
+  line-height: 30px;
+}
+
+.colum-1 .text-su {
+  color: #8e8989;
+  font-size: 14px;
+}
+
+.footer {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: baseline;
+}
+
+.icons-footer {
+  display: flex;
+  column-gap: 1rem;
+  color: blue;
+}
+
+.footer-header {
+  align-items: center;
+  position: relative;
+  font-weight: 700;
+}
+
+.footer-container li {
+  align-items: center;
+  position: relative;
+  list-style: none;
+  line-height: 30px;
+  font-size: 14px;
+  color: #8e8989;
+  font-family: sans-serif;
+}
+
+
+.flec{
+    display: flex;
+    align-items: baseline;
+    column-gap: 10px;
+}
+
+.mail-con {
+    color: blue;
+    display: flex;
+}
+
+.mob{
+    display: flex;
+    column-gap: 10px;
+}
+.mobile{
+    color: blue;
+}
+.location{
+    display: flex;
+    column-gap: 10px;
+}
+
+.gps-con{
+    color: blue;
+}
+
+.all-right p{
+font-size: 12px;
+text-align: end;
+align-items: center;
+margin-top: 20px;
+margin-left: 20px;
+margin-bottom: 0px;
+border-bottom: 2px solid #ccc;
+}
