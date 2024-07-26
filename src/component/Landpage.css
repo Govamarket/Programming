@@ -44,7 +44,7 @@
     font-weight: 600;
     line-height: 60px;
     font-family:Arial, Helvetica, sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .land-text .blue{
@@ -264,13 +264,23 @@ section CiImageOn{
     max-width: 200px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .landpage{
         display: flex;
+        gap: 30px 40px;
         flex-wrap: wrap;
-        padding: 30px;
+        padding: 10px;
         align-items: center;
         position: relative;
+    }
+
+    .flex-side{
+        margin-right: 100px 200px;
+    }
+
+    .new-page{
+    padding: 10px;
+    margin: 20px;
     }
 
     .rows{
@@ -281,13 +291,12 @@ section CiImageOn{
 
     }
     .new-rows{
-        display: grid;
+    display: grid;
       grid-template-columns: auto auto;
       place-items: center;
       column-gap: 100px;
       row-gap: 40px;
-      margin-left: 60px;
-      margin-right: 80px;
+      padding: 0;
     }
 
     .same-con{
@@ -296,8 +305,6 @@ section CiImageOn{
         place-items: center;
         column-gap: 100px;
         row-gap: 40px;
-        margin-left: 60px;
-        margin-right: 80px;
     }
 
     .child-text{
@@ -316,7 +323,8 @@ section .serchInput{
     padding: 15px 10px;
     border-radius: 100px;
     box-shadow: 5px 10px 10px 5px rgb(235, 235, 235);
-}   
+}  
+
 
 }
 
