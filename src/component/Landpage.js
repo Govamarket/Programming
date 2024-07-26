@@ -35,7 +35,8 @@ function Landpage() {
               you
             </p>
           </section>
-
+          
+{/* Input search  */}
           <section className="inp-sr">
             <div className="serchInput">
               <input placeholder="Search your product"></input>

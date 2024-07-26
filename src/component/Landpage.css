@@ -11,6 +11,8 @@
     justify-content: space-evenly;
     align-items: center;
     position: relative;
+    padding: 10px;
+    margin-top: 2rem;
 }
 
 .border-box{
@@ -24,8 +26,10 @@
     font-size: 10px;    
     font-family: sans-serif;
     background: #EAEFFC;
-    border: 2px solid rgb(175, 175, 175);
+    border: 2px solid rgb(222, 220, 220);
+    box-shadow: 2px 2px 2px #5269F8;
     margin-bottom: 40px;
+    position: relative;
 }
 
 .border-box img{
@@ -35,9 +39,11 @@
 }
 
 .land-text{
-    font-size: 2rem;
-    font-weight: 300;
+    display: block;
+    font-size: 34px;
+    font-weight: 600;
     line-height: 60px;
+    font-family:Arial, Helvetica, sans-serif;
     margin-bottom: 20px;
 }
 
@@ -55,6 +61,7 @@
 .article{
     margin-bottom: 20px;
     font-weight: 650;
+    margin-left: 3px;
 }
 
 .flex-side img{
@@ -66,19 +73,21 @@
 section input{
     outline: none;
     border: none;
+    min-width: 350px;
+    height: 50px;
+    text-align: center;
     font-family: sans-serif;
     color: #000 !important;
     background: none;
     position: relative;
-    border-radius: 100px;
     font-size: 1rem;
 }
 
 
 .inputIcon{
     display: flex;
-    margin-left: 10rem;
-    column-gap: 2rem;
+    background-color: #fff;
+    column-gap: 20px;
     align-items: center;
     position: relative;
   }
@@ -87,9 +96,9 @@ section input{
 section .serchInput{
     display: flex;
     min-width: 50%;
-    background: #fff;
-    padding: 15px 10px;
-    border-radius: 100px;
+    background-color: #fff;
+    padding: 12px 10px;
+    border-radius: 10px 20px 15px;
     box-shadow: 5px 10px 10px 5px rgb(235, 235, 235);
 }
 
@@ -299,6 +308,15 @@ section CiImageOn{
         font-size: 19px;
         font-weight: 500;
 }
+
+section .serchInput{
+    display: flex;
+    min-width: 40%;
+    /* background: #fff; */
+    padding: 15px 10px;
+    border-radius: 100px;
+    box-shadow: 5px 10px 10px 5px rgb(235, 235, 235);
+}   
 
 }
 
