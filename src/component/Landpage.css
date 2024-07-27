@@ -324,6 +324,12 @@ section .serchInput{
     box-shadow: 5px 10px 10px 5px rgb(235, 235, 235);
 }  
 
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
 
 }
 
