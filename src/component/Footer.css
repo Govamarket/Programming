@@ -136,6 +136,46 @@ margin-bottom: 0px;
       box-sizing: border-box;
     }
 
+}
 
+@media only screen and (max-width: 480px) {
+  /* Styles for devices with a max-width of 480px, like mobile phones in portrait mode */
+  body {
+      font-size: 14px;
+  }
+
+  .footer-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    margin-right: 180px;
+    margin-left: 90px;
+    column-gap: 30px;
+   
+  }
+
+  .all-right p{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    align-items: center;
+    margin-bottom: 0px;
+    } 
+
+    .colum-1{
+      margin-bottom: 4rem;
+    }
+
+    .footer-container.colum-2{
+      display: inline-flexbox;
+     position: relative;
+     align-items: center;
+     padding: 2rem;
+
+    }
+
+    .footer-header{
+      align-content: baseline;
+    }
 
 }
