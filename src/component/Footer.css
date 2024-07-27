@@ -90,7 +90,7 @@ margin-left: 20px;
 margin-bottom: 0px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .footer-container{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -108,8 +108,7 @@ margin-bottom: 0px;
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 0px;
-    border-bottom: 2px solid #ccc;
-    width: 100%;
+    width: auto;
     } 
 
 }

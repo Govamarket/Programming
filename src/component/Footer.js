@@ -117,6 +117,7 @@ function Footer() {
       <section className="all-right">
     <p>© Copyright 2011-2021 www.dapplab.co All rights reserved. Developed by Wecode.</p>
       </section>
+      <hr></hr>
     </div>
   );
 }
