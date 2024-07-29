@@ -8,15 +8,17 @@ body{
     scroll-behavior: smooth;
 }
 
-.navbar{
+nav{
     padding: 10px;
+    width: 100%;
+    align-items: center;
+
 }
 
-.navbar_container{
+.nav-links{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* max-width: 1000px; */
     margin: auto;
 }
   
@@ -36,6 +38,7 @@ body{
 
 .nav-logo-2{
     max-width: 120px;
+    cursor: pointer;
 }
 
 .nav-links ul{
@@ -49,12 +52,15 @@ body{
     list-style: none;
 }
 
-.nav-links{
+.nav-links ul{
 display: flex;
 align-items: center;
-column-gap: 100px;
+column-gap: 50px;
 text-decoration: none;
 position: relative;
+cursor: pointer;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 70px;
 }
 
 .nav-btn button{
@@ -67,46 +73,101 @@ position: relative;
     font-weight: 500;
     font-family: sans-serif;
     border-radius: 4PX;
-}
-
-/* Responsive style */
-.toggle-button{
-    display: none;
-    flex-direction: column;
     cursor: pointer;
 }
 
-.toggle-button .bar{
-    height: 3px;
-    width: 25px;
-    background: #fff;
-    margin: 4px 0;
+/* Responsive style */
+.burger-handle{
+    display: none;
+    cursor: pointer;
 }
+
+.burger-handle div{
+width: 25px;
+min-height: 3px;
+margin: 5px;
+background: #fff;
+transition: all 0.3 ease;
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .toggle .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .toggle .bar2 {
+    opacity: 0;
+  }
+  
+  .toggle .bar3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  } 
 
 
 
 /* Media query for responsiveness */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
 
-        .toggle-button {
-            display: flex;
-            
-        }
+       body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+
+       .navbar-logos{
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        margin-left: 2rem;
+    }
+
+       nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+       }
 
        
-        .nav-links{
-            display: none;
+       .nav-links {
+        width: 100%;
+        position: relative;
+        top: -1vh;
+        /* margin: 1rem; */
+        display: flex;
+        flex-direction: row;
+        column-gap: 2rem;
+        align-items: center;
+        transform: translateX(-10%);
+        transition: transform 1s ease-in;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        border-radius: 1rem;
+      }
+
+        .nav-links ul {
+            display: flex;
+            flex-direction: row;
             width: 100%;
         }
 
         .nav-links ul {
-            flex-direction: column;
-            width: 100%;
-        }
-
-        .nav-links li {
             text-align: center;
-            padding: 10px 0;
+            padding: 10px;
             width: 100%;
             
         }
@@ -114,4 +175,45 @@ position: relative;
         .nav-links.active {
             display: flex;
         }
+
+
+        .nav-links ul {
+            opacity: 1;
+          }
+         
+          .burger-handle {
+            display: block;
+          }
+        
+          .burger-handle div{
+            padding: 5px;
+          }
+        
+          .nav-active {
+            transform: translateX(0%);
+          }
+        
+        
+          @keyframes navLinkFade {
+            from {
+              opacity: 0;
+              transform: translateX(50px);
+            }
+            to {
+              opacity: 1;
+              transform: translateX(0px);
+            }
+          }
+          
+          .toggle .bar1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+          }
+          
+          .toggle .bar2 {
+            opacity: 0;
+          }
+          
+          .toggle .bar3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+          }
 }
